@@ -48,4 +48,5 @@ function onPhotoURISuccess(imageURI) {
 
 function onFail(message) {
     alert('Failed because: ' + message);
+    cordova.plugins.notification.badge.clear();
 }
